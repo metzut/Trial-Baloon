@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "stash",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*", "/s/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "stash"
+    }
+  ],
+  "observability": { "enabled": true }
+}

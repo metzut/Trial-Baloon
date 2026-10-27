@@ -580,7 +580,8 @@ function openSettings() {
         "ol.steps.small",
         {},
         h("li", {}, "Open the ", h("b", {}, "Shortcuts"), " app, tap ", h("b", {}, "+"), ", and name the shortcut ", h("b", {}, "Stash"), "."),
-        h("li", {}, "Tap the ", h("b", {}, "ⓘ"), " button at the bottom and turn on ", h("b", {}, "Show in Share Sheet"), "."),
+        h("li", {}, "Tap the shortcut's ", h("b", {}, "name"), " at the very top, choose ", h("b", {}, "Details"), ", and turn on ", h("b", {}, "Show in Share Sheet"), ". On older iPhones this is behind an ", h("b", {}, "ⓘ"), " button instead."),
+        h("li", {}, "Add actions with the ", h("b", {}, "Search Actions"), " bar at the bottom of the editor. Don't use the “describe what you want” box, and don't tap ▶ until you're done."),
         h("li", {}, "Add the action ", h("b", {}, "Get Contents of URL"), " and paste this as its URL:", copyLine(boardsLink)),
         h("li", {}, "Add ", h("b", {}, "Choose from List"), ". It picks up the list of boards automatically. Set its prompt to “Save to…”."),
         h(
